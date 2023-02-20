@@ -6,19 +6,19 @@
         public virtual string? PackageName { get; set; }
         public virtual string? PackageContent { get; set; }
         public virtual float PackagePay { get; set; }
-        public virtual float Plate { get; set; } //Required
-        public virtual string? Image1 { get; set; }
-        public virtual string? Image2 { get; set; }
+        public virtual string? Plate { get; set; } //Required
+        public virtual string? Image1 { get; set; } //Image Link
+        public virtual string? Image2 { get; set; } //Image Link
         public virtual string? Brand { get; set; }
         public virtual string? Model { get; set; }
         public virtual string? ChassisNumber { get; set; }
         public virtual int Year { get; set; }
-        public virtual string? CarType { get; set; } //Required Dyno
-        public virtual string? TransmissionType { get; set; } //Required Dyno
+        public virtual Enums.CarType? CarType { get; set; } //Required Dyno
+        public virtual Enums.GearType? TransmissionType { get; set; } //Required Dyno
         public virtual string? EngineNumber { get; set; }
-        public virtual string? FuelType { get; set; } //Required Dyno
+        public virtual Enums.EngineType? FuelType { get; set; } //Required Dyno
         public virtual int CarKm { get; set; }
-        public virtual string? CarCase { get; set; } //Required Paint
+        public virtual string? CarCase { get; set; }
         public virtual int EngineHP { get; set; } //Required Dyno
         public virtual string? ParentName { get; set; }
         public virtual string? ParentPhone { get; set; }

@@ -17,22 +17,19 @@ namespace Expertsoft5.IntegrationSample.Controllers
 
         [HttpPost]
         [Authorize]
-        public Response<WorkResponse> GetWorkResult(WorkRequest request)
+        public Response<string> GetWorkResult(WorkResultRequest request)
         {
-            Response<WorkResponse> response = new Response<WorkResponse>();
+            Response<string> response = new Response<string>();
 
-            if (request.Plate?.ToString().ToUpper() == "34TR34" || request.ChassisNumber?.ToString().ToUpper() == "9348903485" || request.WorkNumber?.ToString().ToUpper() == "00049359")
+            if (request.CustomNumber != null)
             {
-                response.Result = new WorkResponse()
-                {
-
-                };
+                response.Result = "Save Success";
 
                 response.Status = true;
             }
             else
             {
-                response.ErrorMessage = "Server Work Not Found";
+                response.ErrorMessage = "Invalid Custom Number";
             }
 
             return response;
