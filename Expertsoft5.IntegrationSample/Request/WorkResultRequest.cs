@@ -12,10 +12,10 @@
         public virtual double SuspLeftEfficiencyAks1 { get; set; }
         public virtual double SuspRightEfficiencyAks1 { get; set; }
 
-        public virtual string? SuspFrontLeftAks0 { get; set; } //Png_Base64
-        public virtual string? SuspFrontRightAks0 { get; set; } //Png_Base64
-        public virtual string? SuspFrontLeftAks1 { get; set; } //Png_Base64
-        public virtual string? SuspFrontRightAks1 { get; set; } //Png_Base64
+        public virtual string? SuspFrontLeftGraph0 { get; set; } //Png_Base64
+        public virtual string? SuspFrontRightGraph0 { get; set; } //Png_Base64
+        public virtual string? SuspFrontLeftGraph1 { get; set; } //Png_Base64
+        public virtual string? SuspFrontRightGraph1 { get; set; } //Png_Base64
 
         //BRAKE
 
@@ -35,12 +35,12 @@
         public virtual double BrakeRightPerAks2 { get; set; }
         public virtual double BrakeDeflectAks2 { get; set; }
 
-        public virtual string? BrakeFrontLeftAks0 { get; set; } //Png_Base64
-        public virtual string? BrakeFrontRightAks0 { get; set; } //Png_Base64
-        public virtual string? BrakeFrontLeftAks1 { get; set; } //Png_Base64
-        public virtual string? BrakeFrontRightAks1 { get; set; } //Png_Base64
-        public virtual string? BrakeFrontLeftAks2 { get; set; } //Png_Base64
-        public virtual string? BrakeFrontRightAks2 { get; set; } //Png_Base64
+        public virtual string? BrakeFrontLeftGraph0 { get; set; } //Png_Base64
+        public virtual string? BrakeFrontRightGraph0 { get; set; } //Png_Base64
+        public virtual string? BrakeFrontLeftGraph1 { get; set; } //Png_Base64
+        public virtual string? BrakeFrontRightGraph1 { get; set; } //Png_Base64
+        public virtual string? BrakeFrontLeftGraph2 { get; set; } //Png_Base64
+        public virtual string? BrakeFrontRightGraph2 { get; set; } //Png_Base64
 
 
         //SHIFT
